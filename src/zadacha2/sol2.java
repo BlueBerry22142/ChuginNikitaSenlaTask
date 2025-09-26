@@ -23,6 +23,10 @@ public class sol2 {
         while (true){
             System.out.print("\nВВЕДИТЕ ВАШЕ КОЛИЧЕСТО ДОЛЛАРОВ США(USD), ДЕСЯТИЧНЫМ РАЗДЕЛИТЕЛЕМ ЯВЛЯЕТСЯ ЗАПЯТАЯ\n");
             count = myScanner.nextFloat();
+            if (count<0.0){
+                System.out.print("ОШИБКА. КОЛИЧЕСТВО ДОЛЛАРОВ ДОЛЖНО БЫТЬ ПОЛОЖИТЕЛЬНЫМ. \n");
+                continue;
+            }
             System.out.print("ВЕДИТЕ ТИКЕР ЦЕЛЕВОЙ ВАЛЮТЫ\n");
             ticker=myScanner.next();
             switch (ticker){
